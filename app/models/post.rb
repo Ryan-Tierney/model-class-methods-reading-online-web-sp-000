@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
   end 
   
   def self.old_news
-    whe
+    where("create_at <?", Time.zone.today.beginning_of_day)
 
   private
 
