@@ -9,7 +9,11 @@ class Post < ActiveRecord::Base
   end 
   
   def self.from_today
-    where
+    where("created_at >=?", Time.zone.today.beginning_of_day)
+  end 
+  
+  def self.old_news
+    whe
 
   private
 
