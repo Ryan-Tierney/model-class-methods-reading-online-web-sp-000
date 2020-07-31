@@ -1339,3 +1339,18 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 38ms (Views: 32.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/posts?utf8=%E2%9C%93&author=12&commit=Filter" for 173.18.197.157 at 2020-07-31 23:37:39 +0000
+Cannot render console from 173.18.197.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "author"=>"12", "commit"=>"Filter"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/victorious-flow-1457/model-class-methods-reading-online-web-sp-000/app/views/posts/index.html.erb:29: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/index.html.erb:29: syntax error, unexpected ensure, expecting end-of-input
