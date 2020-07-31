@@ -7,7 +7,7 @@ class PostsController < ApplicationController
       if params[:date] == "Today"
         @posts = Post.from_today
       else
-        @posts = Post.old.news
+        @posts = Post.old_news
       end
     else
       @posts = Post.all
