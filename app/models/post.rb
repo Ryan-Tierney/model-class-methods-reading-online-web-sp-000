@@ -14,6 +14,7 @@ class Post < ActiveRecord::Base
   
   def self.old_news
     where("create_at <?", Time.zone.today.beginning_of_day)
+  end 
 
   private
 
