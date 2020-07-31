@@ -12,6 +12,7 @@ def index
   else
     @posts = Post.all
   end
+end 
 
   def show
     @post = Post.find(params[:id])
